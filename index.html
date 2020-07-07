@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;500;700&display=swap" rel="stylesheet">
+  <!-- Fontawesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+  <!-- JQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!-- Handlebars -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.6/handlebars.js"></script>
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css">
+  <title>Todoolean</title>
+</head>
+
+  <body>
+
+    <div class="container">
+      <h1>Todoolean</h1>
+      <input id="todo-input" type="text" placeholder="Inserisci cose da fare">
+      <button id="add" type="button" name="button">Aggiungi</button>
+
+      <div id="todo-list">
+        <ul id="list">
+
+        </ul>
+      </div>
+    </div>
+
+    <!-- Handlebars template -->
+    <script id="todo-template" type="text/x-handlebars-template">
+      <li class="list-element" data-id="{{id}}">
+        <span class="text">{{ text }}</span>
+        <span class="del_btn">
+          <button class="delete" type="button" name="button">X</button>
+        </span>
+      </li>
+    </script>
+    <!-- End Handlebars template -->
+
+    <script src="js/script.js" charset="utf-8"></script>
+  </body>
+</html>

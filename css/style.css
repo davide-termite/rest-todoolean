@@ -1,0 +1,14 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* End Reset */
+
+li.list-element{
+  display: flex;
+  justify-content: space-between;
+  width: 400px;
+  padding: 10px 20px;
+}
